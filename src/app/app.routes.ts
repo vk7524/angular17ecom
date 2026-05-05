@@ -14,10 +14,10 @@ import { Checkout } from './customer/buyer/checkout/checkout';
 import { PageNotFound } from './shared/layouts/page-not-found/page-not-found';
 
 export const routes: Routes = [
-    { path: "", redirectTo: "/", pathMatch: "full" },
-    { path: "", component: Home },
+    { path: "", redirectTo: "home", pathMatch: "full" },
+    { path: "home", component: Home },
     { path: "user-profile", component: UserProfile },
-    { path: "contact-use", component: ContactUs },
+    { path: "contact-us", component: ContactUs },
     // admin
     {
         path: '', children: [

@@ -1,1 +1,175 @@
-<p>signin-signup works!</p>
+<div class="container mt-5">
+  <div class="card shadow-lg p-4">
+
+    <h3 class="text-center mb-4 text-primary">
+      Registration Form (Reactive Form)
+    </h3>
+
+    <form [formGroup]='signUpform' (ngSubmit)="onSubmitSignUp()">
+
+      <!-- Basic Info -->
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" formControlName="name">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Mobile Number</label>
+        <input type="tel" class="form-control" formControlName="mobNumber">
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Age</label>
+          <input type="number" class="form-control" formControlName="age">
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label class="form-label">DOB</label>
+          <input type="date" class="form-control" formControlName="dob">
+        </div>
+      </div>
+
+      <!-- Email + Password -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" formControlName="email">
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" formControlName="password">
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div class="mb-3">
+        <label class="form-label">Address Line 1</label>
+        <input type="text" class="form-control" formControlName="addLine1">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Address Line 2</label>
+        <input type="text" class="form-control" formControlName="addLine2">
+      </div>
+
+      <!-- City State Zip -->
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <label class="form-label">City</label>
+          <input type="text" class="form-control" formControlName="city">
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label class="form-label">State</label>
+          <select class="form-control" formControlName="state">
+            <option>Choose...</option>
+            <option>Delhi</option>
+            <option>Uttar Pradesh</option>
+            <option>Haryana</option>
+          </select>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <label class="form-label">Zip Code</label>
+          <input type="text" class="form-control" formControlName="zipCode">
+        </div>
+      </div>
+
+      <!-- Language -->
+      <div class="mb-3">
+        <label class="form-label">Language</label>
+        <select multiple class="form-control" formControlName="language">
+          <option>Hindi</option>
+          <option>English</option>
+          <option>Bhojpuri</option>
+          <option>Telugu</option>
+          <option>Odia</option>
+        </select>
+      </div>
+
+      <!-- Gender -->
+      <div class="mb-3">
+        <label class="form-label d-block">Gender</label>
+
+        <div class="form-check form-check-inline">
+          <input type="radio" class="form-check-input" formControlName="gender" value="Male">
+          <label class="form-check-label">Male</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input type="radio" class="form-check-input" formControlName="gender" value="Female">
+          <label class="form-check-label">Female</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input type="radio" class="form-check-input" formControlName="gender" value="Others">
+          <label class="form-check-label">Others</label>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="mb-3">
+        <label class="form-label">About You</label>
+        <textarea class="form-control" rows="3" formControlName="aboutYou"></textarea>
+      </div>
+
+      <!-- Upload -->
+      <div class="mb-3">
+        <label class="form-label">Upload Photo</label>
+        <input type="file" class="form-control" formControlName="uploadPhoto">
+      </div>
+
+      <!-- Terms -->
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" formControlName="agreetc">
+        <label class="form-check-label">I agree to Terms & Conditions</label>
+      </div>
+
+      <!-- Role -->
+      <div class="mb-3">
+        <label class="form-label">Role</label>
+        <select class="form-control" formControlName="role">
+          <option value="">Select Role</option>
+          <option value="seller">Seller</option>
+          <option value="buyer">Buyer</option>
+        </select>
+      </div>
+
+      <!-- Button -->
+      <div class="text-center">
+        <button class="btn btn-primary px-5 py-2">
+          Register
+        </button>
+      </div>
+
+    </form>
+    <p class="sim-pointer" routerLink="/sign-in">Already Have An Account Please Click Here To Loginz</p>
+
+  </div>
+  <div class="col-md-6 offset-md-3">
+
+    <h3>Login - Angular 17 Template Driven Form With Validation</h3>
+
+    <form>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" name="userEmail">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="userPassword">
+      </div>
+
+      <div class="form-group mt-3">
+        <button class="btn btn-primary">
+          Login
+        </button>
+      </div>
+    </form>
+    <p class="sim-pointer" routerLink="/sign-up">Don't have An Account Please Click Here To Registration</p>
+  </div>
+</div>

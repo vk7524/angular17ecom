@@ -1,1 +1,119 @@
-{}
+{
+  "user": [
+    {
+      "id": "1",
+      "name": "Vivek Dubey",
+      "mobNumber": "9876543210",
+      "age": 26,
+      "dob": "1998-05-10",
+      "email": "vivek@gmail.com",
+      "password": "123456",
+      "address": {
+        "addLine1": "House No 123",
+        "addLine2": "Near Market",
+        "city": "Noida",
+        "state": "Uttar Pradesh",
+        "zipCode": "201301"
+      },
+      "language": [
+        "English",
+        "Hindi"
+      ],
+      "gender": "Male",
+      "aboutYou": "I am a frontend developer",
+      "uploadPhoto": "vivek.png",
+      "agreetc": true,
+      "role": "admin"
+    },
+    {
+      "aboutYou": "test ets",
+      "age": 28,
+      "agreetc": true,
+      "dob": "2026-05-05",
+      "email": "vivek@gmail.com",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "addLine1": "terds",
+        "addLine2": "erere",
+        "city": "noida",
+        "state": "Delhi",
+        "zipCode": "232323"
+      },
+      "language": [
+        "Bhojpuri"
+      ],
+      "mobNumber": "07548355827",
+      "name": "test",
+      "password": "rdsew2324",
+      "uploadPhoto": "C:\\fakepath\\ChatGPT Image Apr 29, 2026, 03_38_21 PM.png",
+      "role": "seller",
+      "id": "yswzepXIFW4"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Polyester Door Curtain",
+      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jcf48rko/curtain/w/e/y/elegant-cream-door-curtains-set-of-2-213-soe-fsb-120-120-eyelet-original-imaffk7f9wng4v4m.jpeg",
+      "productDesc": "Transform the ambiance of your home with these elegant, crushed texture, light weight, solid color curtains. These curtains are available in several colors and sizes to match your home decor and the gracefully flowing polyester is durable and machine washable for your convenience.",
+      "mrp": 1000,
+      "dp": 499,
+      "status": "publish"
+    },
+    {
+      "id": "2",
+      "name": "Water Bottle",
+      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/bottle/w/5/g/1000-cello-h2o-cello-h2o-water-bottel-cello-original-imaeqtj3vyxyehmn.jpeg",
+      "productDesc": "Hygienic bottle: The bottle is made of 100% food grade material & is BPA free ensures a safe drinking. Crystal Clarity: It's sheer body helps to easily identify the contents & also adds beauty to the liquid that you put in, Leak Proof: The bottle has a liquid tight cap that prevents leakage & is unbreakable. Freezer safe: These bottles are compatible with refrigerator & not being curvy the bottle occupies less space. Looks pretty in the fridge or on the table top.",
+      "mrp": 123,
+      "dp": 99,
+      "status": "publish"
+    },
+    {
+      "id": "3",
+      "name": "Metro Living Self Design Pillows Cover",
+      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jjsw4nko/cushion-pillow-cover/e/z/z/epl12-metro-living-original-imaf7ah6zstjyevd.jpeg",
+      "productDesc": "Regional Speciality Rajasthan, Fabric Care Machine Wash, Do not Bleach, Wash in Cold Water, Thread Count 104, Sales Package Pack of 2 Pillow Cover",
+      "mrp": 500,
+      "dp": 399,
+      "status": "draft"
+    },
+    {
+      "id": "4",
+      "name": "Metro Living Self Design Pillows Cover",
+      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jjsw4nko/cushion-pillow-cover/e/z/z/epl12-metro-living-original-imaf7ah6zstjyevd.jpeg",
+      "productDesc": "Regional Speciality Rajasthan, Fabric Care Machine Wash, Do not Bleach, Wash in Cold Water, Thread Count 104, Sales Package Pack of 2 Pillow Cover",
+      "mrp": 500,
+      "dp": 399,
+      "status": "draft"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 1,
+      "sellerId": 101,
+      "product": {
+        "id": 2,
+        "name": "Mobile",
+        "uploadPhoto": "mobile.png",
+        "productDesc": "Latest smartphone with great camera",
+        "mrp": 25000,
+        "dp": 20000,
+        "status": "active"
+      },
+      "deliveryAddress": {
+        "id": 1,
+        "addLine1": "House No 123",
+        "addLine2": "Near Market",
+        "city": "Noida",
+        "state": "Uttar Pradesh",
+        "zipCode": "201301"
+      },
+      "contact": "9876543210",
+      "dateTime": "2026-04-30T10:30:00"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
